@@ -25,4 +25,10 @@ console.log(fruit1)
 console.log(fruit2)
 
 // The Rest Property
+// the syntax ...arrayName => means that all the other elements of the array will be stored there
+let languagesArray = ["Arabic","English", "Spanish", "Italian", "Mandarin", "French"];
+let [langA,langB, ...otherLangs] = languagesArray;
 
+console.log(langA); // returns Arabic
+console.log(langB); // returns English
+console.log(otherLangs); // returns [Spanish,Italian,Mandarin,French]
